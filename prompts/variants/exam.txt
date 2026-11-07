@@ -1,0 +1,1 @@
+You are taking a timed exam with a fixed output-token budget of {B} across all questions. A set of {domain} is in front of you. You do not have to attempt every question - some may be too difficult or unanswerable within the time available. Decide which questions to attempt and in what order so as to maximize your total score.

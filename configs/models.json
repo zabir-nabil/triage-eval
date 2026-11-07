@@ -1,0 +1,814 @@
+{
+  "configurations": {
+    "qwen2.5-3b-standard": {
+      "name": "Qwen 2.5 3B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-3B-Instruct",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-3B-Instruct",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen2.5-7b-standard": {
+      "name": "Qwen 2.5 7B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-7B-Instruct",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-7B-Instruct",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen2.5-14b-standard": {
+      "name": "Qwen 2.5 14B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-14B-Instruct",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-14B-Instruct",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen2.5-32b-standard": {
+      "name": "Qwen 2.5 32B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-32B-Instruct",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen2.5-32B-Instruct",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 16384,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3-4b-extended": {
+      "name": "Qwen 3 4B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-4B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-4B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3-8b-extended": {
+      "name": "Qwen 3 8B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-8B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-8B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3-14b-extended": {
+      "name": "Qwen 3 14B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-14B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-14B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3-32b-extended": {
+      "name": "Qwen 3 32B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-32B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3-32B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-4b-standard": {
+      "name": "Qwen 3.5 4B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-4B",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-4B",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-4b-extended": {
+      "name": "Qwen 3.5 4B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-4B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-4B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-9b-standard": {
+      "name": "Qwen 3.5 9B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-9B",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-9B",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-9b-extended": {
+      "name": "Qwen 3.5 9B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-9B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-9B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-27b-standard": {
+      "name": "Qwen 3.5 27B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-27B",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-27B",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-27b-extended": {
+      "name": "Qwen 3.5 27B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-27B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-27B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-35b-a3b-standard": {
+      "name": "Qwen 3.5 35B-A3B",
+      "mode": "standard",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-35B-A3B",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-35B-A3B",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "qwen3.5-35b-a3b-extended": {
+      "name": "Qwen 3.5 35B-A3B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-35B-A3B",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "vllm",
+        "model_id": "Qwen/Qwen3.5-35B-A3B",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "claude-haiku-4.5-standard": {
+      "name": "Claude Haiku 4.5",
+      "mode": "standard",
+      "main": {
+        "provider": "openrouter",
+        "model_id": "anthropic/claude-haiku-4.5",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 16384,
+        "api_key_env": "OPENROUTER_API_KEY"
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "temperature": 0.7,
+        "solver_max_tokens": 64000,
+        "planner_max_tokens": 16384,
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    },
+    "deepseek-v3-standard": {
+      "name": "DeepSeek V3",
+      "mode": "standard",
+      "main": {
+        "provider": "deepseek",
+        "model_id": "deepseek-chat",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "api_key_env": "DEEPSEEK_API_KEY"
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "deepseek.v3.2",
+        "temperature": 0.7,
+        "solver_max_tokens": 150000,
+        "planner_max_tokens": 8192,
+        "api_key_env": "DEEPSEEK_API_KEY",
+        "supports_temperature": true
+      }
+    },
+    "gemini-2.5-flash-standard": {
+      "name": "Gemini 2.5 Flash",
+      "mode": "standard",
+      "main": {
+        "provider": "gemini",
+        "model_id": "gemini-2.5-flash",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "thinking_budget": 0,
+        "planner_max_tokens_options": [
+          8192,
+          16384
+        ]
+      },
+      "repeated": {
+        "provider": "gemini",
+        "model_id": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "thinking_budget": 0,
+        "planner_max_tokens_options": [
+          8192,
+          16384
+        ]
+      }
+    },
+    "gpt-5-mini-standard": {
+      "name": "GPT-5 Mini",
+      "mode": "standard",
+      "main": {
+        "provider": "openai",
+        "model_id": "gpt-5-mini",
+        "temperature": null,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 16384,
+        "api_key_env": "OPENAI_API_KEY",
+        "max_tokens_parameter": "max_completion_tokens",
+        "supports_temperature": false
+      },
+      "repeated": {
+        "provider": "openai",
+        "model_id": "gpt-5-mini",
+        "temperature": null,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 16384,
+        "api_key_env": "OPENAI_API_KEY",
+        "max_tokens_parameter": "max_completion_tokens",
+        "supports_temperature": false
+      }
+    },
+    "kimi-k2.5-standard": {
+      "name": "Kimi K2.5",
+      "mode": "standard",
+      "main": {
+        "provider": "openrouter",
+        "model_id": "moonshotai/kimi-k2.5:nitro",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "api_key_env": "OPENROUTER_API_KEY"
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "moonshotai.kimi-k2.5",
+        "temperature": 0.7,
+        "solver_max_tokens": 180000,
+        "planner_max_tokens": 8192,
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    },
+    "glm-5.1-standard": {
+      "name": "GLM 5.1",
+      "mode": "standard",
+      "main": {
+        "provider": "openrouter",
+        "model_id": "z-ai/glm-5.1:nitro",
+        "temperature": 0.0,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "planner_max_tokens_options": [
+          8192,
+          16384,
+          32768,
+          100000
+        ]
+      },
+      "repeated": {
+        "provider": "openrouter",
+        "model_id": "z-ai/glm-5.1:nitro",
+        "temperature": 0.7,
+        "solver_max_tokens": {
+          "default": 4096,
+          "livecodebench": 8192
+        },
+        "planner_max_tokens": 8192,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "planner_max_tokens_options": [
+          8192,
+          16384,
+          32768,
+          100000
+        ],
+        "disable_reasoning": true
+      }
+    },
+    "claude-haiku-4.5-extended": {
+      "name": "Claude Haiku 4.5",
+      "mode": "extended",
+      "main": {
+        "provider": "openrouter",
+        "model_id": "anthropic/claude-haiku-4.5",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 32768,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "reasoning_effort": "high"
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "temperature": 1.0,
+        "solver_max_tokens": 64000,
+        "planner_max_tokens": 32768,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    "deepseek-v3-extended": {
+      "name": "DeepSeek V3",
+      "mode": "extended",
+      "main": {
+        "provider": "deepseek",
+        "model_id": "deepseek-reasoner",
+        "temperature": null,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 65536,
+        "api_key_env": "DEEPSEEK_API_KEY",
+        "supports_temperature": false,
+        "planner_max_tokens_options": [
+          16384,
+          65536
+        ]
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "deepseek.v3.2",
+        "temperature": 0.7,
+        "solver_max_tokens": 150000,
+        "planner_max_tokens": 65536,
+        "api_key_env": "DEEPSEEK_API_KEY",
+        "supports_temperature": true,
+        "planner_max_tokens_options": [
+          16384,
+          65536
+        ],
+        "reasoning_effort": "high"
+      }
+    },
+    "gemini-2.5-flash-extended": {
+      "name": "Gemini 2.5 Flash",
+      "mode": "extended",
+      "main": {
+        "provider": "gemini",
+        "model_id": "gemini-2.5-flash",
+        "temperature": null,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 65536,
+        "thinking_budget": 24576
+      },
+      "repeated": {
+        "provider": "gemini",
+        "model_id": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 65536,
+        "thinking_budget": 24576
+      }
+    },
+    "gpt-5-mini-extended": {
+      "name": "GPT-5 Mini",
+      "mode": "extended",
+      "main": {
+        "provider": "openai",
+        "model_id": "gpt-5-mini",
+        "temperature": null,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 65536,
+        "api_key_env": "OPENAI_API_KEY",
+        "max_tokens_parameter": "max_completion_tokens",
+        "supports_temperature": false,
+        "reasoning_effort": "high"
+      },
+      "repeated": {
+        "provider": "openai",
+        "model_id": "gpt-5-mini",
+        "temperature": null,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 65536,
+        "api_key_env": "OPENAI_API_KEY",
+        "max_tokens_parameter": "max_completion_tokens",
+        "supports_temperature": false,
+        "reasoning_effort": "high"
+      }
+    },
+    "kimi-k2.5-extended": {
+      "name": "Kimi K2.5",
+      "mode": "extended",
+      "main": {
+        "provider": "openrouter",
+        "model_id": "moonshotai/kimi-k2.5:nitro",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "reasoning_effort": "high",
+        "planner_max_tokens_options": [
+          16384,
+          65536
+        ]
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "moonshotai.kimi-k2.5",
+        "temperature": 0.7,
+        "solver_max_tokens": 180000,
+        "planner_max_tokens": 16384,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "reasoning_effort": "high",
+        "planner_max_tokens_options": [
+          16384,
+          65536
+        ]
+      }
+    },
+    "glm-5.1-extended": {
+      "name": "GLM 5.1",
+      "mode": "extended",
+      "main": {
+        "provider": "openrouter",
+        "model_id": "z-ai/glm-5.1:nitro",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 100000,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "reasoning_effort": "high"
+      },
+      "repeated": {
+        "provider": "openrouter",
+        "model_id": "z-ai/glm-5.1:nitro",
+        "temperature": 0.7,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 100000,
+        "api_key_env": "OPENROUTER_API_KEY",
+        "reasoning_effort": "high"
+      }
+    },
+    "gpt-oss-20b-extended": {
+      "name": "GPT-OSS 20B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "openai/gpt-oss-20b",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "reasoning_effort": "medium",
+        "solver_context_length": 32768,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "openai.gpt-oss-20b-1:0",
+        "temperature": 0.7,
+        "solver_max_tokens": 128000,
+        "planner_max_tokens": 16384,
+        "reasoning_effort": "medium",
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    },
+    "gpt-oss-120b-extended": {
+      "name": "GPT-OSS 120B",
+      "mode": "extended",
+      "main": {
+        "provider": "vllm",
+        "model_id": "openai/gpt-oss-120b",
+        "temperature": 0.0,
+        "solver_max_tokens": 16384,
+        "planner_max_tokens": 16384,
+        "reasoning_effort": "medium",
+        "solver_context_length": 32768,
+        "planner_context_length": 32768,
+        "planner_long_context_length": 65536
+      },
+      "repeated": {
+        "provider": "bedrock",
+        "model_id": "openai.gpt-oss-120b-1:0",
+        "temperature": 0.7,
+        "solver_max_tokens": 128000,
+        "planner_max_tokens": 16384,
+        "reasoning_effort": "medium",
+        "solver_context_length": 32768,
+        "planner_context_length": 65536,
+        "planner_long_context_length": 65536
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+You are given a set of {domain} to attempt under a fixed output-token budget. You do not have to attempt every problem. Deciding which problems to attempt and in what order is part of the task.
+
+Rules
+-----
+- Each problem is worth the number of points listed next to it. Your goal is to maximize total points earned.
+- A point reward is earned only for a problem answered correctly.
+- Attempting a problem consumes output tokens whether or not the answer is correct.
+- Your budget covers every token you generate while solving, including any internal reasoning, drafts, or scratch work.
+- Each problem is attempted in an independent model session. The tokens you allocate to a problem are spent entirely within that single session, with no context, reasoning, or scratchpad carried over between problems.
+- Problems you do not list in your plan are skipped and consume no tokens.
+- Problems are attempted in the order you list them. If your budget is exhausted before a problem is reached, that problem - and every problem after it in your plan - scores zero.
+
+BUDGET: {B} output tokens
+
+Problems
+--------
+
+{problem_block}
+
+Output format
+-------------
+Return a single JSON array, ordered by solve priority (the first entry is solved first). An empty array is valid if you choose to attempt no problems.
+
+Schema:
+
+  [
+    {"id":     "<problem id, exactly as listed>",
+     "tokens": <your estimate of output tokens required to solve this problem correctly>,
+     "reason": "<one short sentence on why this problem is in the plan at this position and allocation>"}
+    ,
+    ...
+  ]
+
+Your total estimated tokens across all entries should not exceed {B}.
+
+Respond with only the JSON array - no surrounding prose, no markdown code fences.

@@ -1,0 +1,38 @@
+{
+  "profile": "repeated",
+  "alphas": [
+    0.5,
+    1.0
+  ],
+  "pool_size": 30,
+  "min_tail": 10,
+  "random_samples": 1000,
+  "random_seed": 42,
+  "runs": 3,
+  "checkpoint_every": 20,
+  "datasets": {
+    "aime": {
+      "source_2024": "Maxwell-Jia/AIME_2024"
+    },
+    "gpqa_diamond": {
+      "source": "Idavidrein/gpqa",
+      "choice_seed": 42
+    },
+    "livecodebench": {
+      "source": "livecodebench/code_generation_lite",
+      "version": "release_v6"
+    },
+    "hle": {
+      "source": "cais/hle",
+      "categories": [
+        "Humanities/Social Science"
+      ]
+    }
+  },
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "reference_run": 0
+}

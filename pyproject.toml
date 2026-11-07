@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triage-eval"
+version = "0.1.0"
+description = "Prospective task selection and token allocation under a shared budget"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "ASSET_LICENSES.md"]
+dependencies = []
+
+[project.optional-dependencies]
+data = ["datasets>=3.2,<4", "huggingface-hub>=0.27,<1"]
+api = ["openai>=1,<3", "google-genai>=1,<2", "boto3>=1.35,<2", "litellm>=1.60,<2"]
+gpu = ["vllm>=0.19,<0.20; sys_platform == 'linux'"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.data-files]
+"share/triage-eval/configs" = ["configs/models.json", "configs/main.json", "configs/repeated.json"]
+"share/triage-eval/prompts" = ["prompts/planner.txt"]
+"share/triage-eval/prompts/variants" = ["prompts/variants/agent.txt", "prompts/variants/exam.txt"]
